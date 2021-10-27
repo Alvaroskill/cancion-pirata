@@ -1,0 +1,29 @@
+/***** Estilo de pirata con imagen grande de fondo ****/
+@font-face {font-family: pirata;
+    src: url("../fonts/Miama.ttf");}
+body {background-color: black;}
+
+#container {background-image: url("../images/tercera.jpg");
+    background-size: cover; /* cover estira o encige la imagen para que encaje
+                               perfectamente 1 sola vez, sin repetir */
+            width: 100%;
+            height: 100vh; /* puede provocar que el texto del poema se salga del container */
+            margin: auto;
+            font-family: pirata;
+            font-size: 1.5em;
+            background-position: 66%; /*decido donde está el centro de interés de mi imagen de fondo,
+                                        y ahí fijo el punto para posteriores recortes, es left, pero yo he puesto 2º tercio (66%) */
+            box-shadow: 40px 40px 40px rgba(77, 111, 159),
+             -40px 40px 40px rgba(77, 111, 159),
+              40px -40px 40px rgba(77, 111, 159),
+             -40px 40px 40px rgba(77, 111, 159);}
+                                        
+
+#poema {background-color:rgba(77, 111, 159, 0.863);
+        width: 300px;/* en este caso MUY PARTICULAR me conviene fijar el ancho en pixeles 
+                        porque protege el ancho de líneas del poema y no rompe los versos.
+                        Además 300px caben en el ancho de cualquier movil**/
+        padding: 20px;
+        margin: 20px;
+        }
+            
